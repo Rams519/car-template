@@ -1,0 +1,656 @@
+/**
+      * Template Name: Email Car Template 
+      * Template URL: https://wpshopmart.com/email-template/
+      * Author: www.wpshopmart.com
+      * License: https://www.wpshopmart.com/license/
+**/
+
+/*---------# General-------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+li{
+  list-style: none;
+}
+
+.section-title:before{
+  content: "";
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fe0014;
+}
+
+.section-padding{
+  padding: 100px 0;
+}
+
+.section-bg{
+  background: #1B1B1B;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header .logo{
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+#header .nav-bar{
+  background: #101010;
+}
+
+.container{
+  max-width: 800px;
+}
+
+#header .navigation{
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .nav-bar li{
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#header .nav-bar .active{
+  color: #fe0014;
+}
+
+#header .nav-bar li a{
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#header .nav-bar li a:hover{
+  color: #fe0014;
+}
+
+#header .browser a{
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#header .browser a:hover{
+  color: #fe0014;
+}
+
+
+#header .bottom-right-div{
+  width: 30%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fe0014a8;
+  padding: 40px 50px;
+}
+
+#header .bottom-right-div .title{
+    font-size: 36px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+#header .bottom-right-div .description{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+#header .social-media{
+  position: absolute;
+  bottom: 100px;
+  left: 50px
+}
+
+
+#header .social-media ul li{
+  margin-top: 20px; 
+}
+
+#header .social-media ul li a {
+  display: block;
+  background: #fff;
+  padding:8px 9px;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  align-items: center;
+
+}
+
+#header .social-media ul li a:hover{
+  background: red;
+  color: #fff;
+}
+
+#intro{
+  width: 100%;
+  background: #1B1B1B;
+  padding: 100px 0;
+}
+
+#intro h2{
+  color: #fff;
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+
+#intro h6{
+  font-size: 18px;
+  font-family: Open Sans, sans-serif;
+  color: #fe0014;
+  font-weight: bold;
+  margin: 22px 0;
+}
+
+#intro p{
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  padding-right: 120px
+}
+
+
+#intro img{
+  float: right;
+}
+
+/*css for feature section*/
+
+#features h2{
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 35px;
+}
+
+#features h6{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Montserrat;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 25px;
+    margin: 25px 0;
+    padding-right: 130px;
+}
+
+#features img{
+  display: block;
+}
+
+#features p{
+    margin: 25px 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Montserrat;
+    color: #fff;
+    line-height: 24px;
+    padding-right: 100px;
+}
+
+.view-more{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 26px;
+    background: #FE0014;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+#features .our-spl h3{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+#features .our-spl img{
+   display: block;
+   text-align: center;
+   vertical-align: middle;
+}
+
+#features .our-spl h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+#features .our-spl p{
+  
+}
+
+/*css for our project*/
+
+#projects h2{
+  margin-bottom: 32px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+
+#projects img{
+  width: 100%;
+}
+
+/*css for amazing feature start*/
+
+#amazing-features h2{
+    margin-bottom:30px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+
+#amazing-features h3{
+  color: #fff;
+  margin: 25px 0;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 20px;
+  text-align: center;
+}
+
+#amazing-features p{  
+    padding: 0 29px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+/*css for amazing feature end*/
+
+
+/*css for car design start*/
+
+#car-design{
+  background: url(img/car-design.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#car-design .overlay{
+  width: 100%;
+  background: #0401014a;
+}
+
+#car-design .content{
+  padding: 200px 0;
+}
+
+#car-design .content h2{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+#car-design .content p{
+    padding: 0 526px;
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.play-btn{
+  display: block;
+}
+
+.play-btn-inner i{
+    border: 2px solid #fe0014;
+    border-radius: 50%;
+    padding: 17px 20px;
+    cursor: pointer;
+    background-color: #fe0014; 
+    transition: all 0.5s;
+    color: #fff;
+    font-size: 25px;
+}
+
+/*css for car design end*/
+
+
+/*css for gallery section*/
+
+#gallery .caption{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: #fe0014;
+  text-align: center;
+  margin:  auto 0;
+  vertical-align: middle;
+}
+
+
+
+#gallery .caption h4{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    line-height: 16px;
+}
+
+#gallery .section-title{
+    padding: 0px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+#gallery p{
+    padding: 0px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Open Sans, sans-serif;
+}
+
+#gallery .caption h2{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    line-height: 25px;
+}
+
+/*gallery sec end*/
+
+/*css for our-articles start*/
+
+#articles h2{
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+#articles h3{
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#articles span{
+    color: #fe0014;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: open sans,sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#articles p{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: open sans,sans-serif;
+    margin-bottom: 40px;
+}
+
+#articles .view-more-btn{
+  margin-top: 50px;
+}
+
+/*css for our-articles end*/
+
+
+/*css for footer*/
+
+#footer .left-sec h2{
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: open sans,sans-serif;
+}
+
+#footer .left-sec p{
+  color: #fff;
+}
+
+#footer .social-links ul li{
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+#footer .social-links ul li a{
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+#footer .social-links ul li a:hover{
+  background: #fe0014;
+  color: #fff;
+}
+
+#footer .content p{
+  color: #fff;
+  margin-top: 20px;
+}
+
+/*footer css end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
